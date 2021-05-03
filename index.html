@@ -1,0 +1,57 @@
+
+<!Doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Supermarket list</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--css-->
+        <link rel="stylesheet" href="sytle.css">
+
+        <!--bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    </head>
+    <body>
+        <header>
+            <h2>Supermarket list</h2>
+
+        </header>
+        <div class="container">
+            <div class="lista-cadastro was-validated">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nome do produto..."
+                    name="nome_produto" required />
+                    <div class="valid-feedback">Item válido.</div>
+                    <div class="invalid-feedback">Item inválido.</div>
+                </div>
+                <div class="form-group was-validated">
+                    <input type="number" placeholder="R$" class="form-control" name="price" step="0.01"
+                    title="Valor" required>
+                    <div class="valid-feedback">Item válido.</div>
+                    <div class="invalid-feedback">Item inválido.</div>
+                </div>
+       
+                <button type="button" class="btn btn-outline-primary btn-block" name="acao">Cadastrar</button>
+            </div>
+    
+            <div class="lista-produtos"></div>
+
+            <div class="soma-produto">
+                <h1>Total: R$0</h1>
+            </div>
+
+            <button type="button" class="btn btn-outline-danger btn-block" name="limpar">Excluir itens</button> 
+        </div>
+
+
+        <!--scripts-->
+        <script src="superMarket.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
